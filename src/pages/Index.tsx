@@ -48,9 +48,13 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <div
+        className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-20 pointer-events-none"
+        style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+      />
       {/* Header */}
-      <header className="border-b border-border/50 bg-card/80 backdrop-blur-sm sticky top-0 z-10">
+      <header className="border-b border-border/50 bg-card/80 backdrop-blur-sm sticky top-0 z-10 relative">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center gap-3">
           <div className="h-10 w-10 rounded-xl bg-primary/15 flex items-center justify-center">
             <Gamepad2 className="h-5 w-5 text-primary" />
@@ -62,7 +66,7 @@ const Index = () => {
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-4 py-8 space-y-8">
+      <main className="max-w-4xl mx-auto px-4 py-8 space-y-8 relative z-[1]">
         {/* Hero */}
         <section className="text-center space-y-3 py-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/15 text-primary text-sm font-semibold">
