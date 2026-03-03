@@ -2,6 +2,3 @@ project_id = "etqmuslpbiowgnbgpbge"
 
 [functions.health-advisor]
 verify_jwt = false
-
-[functions.game-checker]
-verify_jwt = false
